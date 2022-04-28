@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    #    url: jdbc:postgresql://149.129.32.126:5600/9th_sportdate
+    url: jdbc:postgresql://localhost:5432/jwt-chhinghor
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html
+    display-request-duration: true
+    groups-order: DESC
+    operationsSorter: method
+    disable-swagger-default-url: true
+    use-root-path: true
+    config-url: /swagger-ui/index.html
+server:
+  port: 8080
+
